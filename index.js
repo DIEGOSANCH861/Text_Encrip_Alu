@@ -5,9 +5,9 @@ function encriptar (){
     let muñeco = document.getElementById("muñeco");
 
     let textoCifrado = texto
-        .replace(/a/gi, "ai")
         .replace(/e/gi, "enter")
         .replace(/i/gi, "imes")
+        .replace(/a/gi, "ai")
         .replace(/o/gi, "ober")
         .replace(/u/gi, "ufat")
 
@@ -33,11 +33,11 @@ function desencriptar (){
     let muñeco = document.getElementById("muñeco");
 
     let textoCifrado = texto
-    .replace(/ai/gi, "a")
-    .replace(/enter/gi, "e")
-    .replace(/imes/gi, "i")
-    .replace(/ober/gi, "o")
-    .replace(/ufat/gi, "u");
+        .replace(/enter/gi, "e")
+        .replace(/imes/gi, "i")
+        .replace(/ai/gi, "a")
+        .replace(/ober/gi, "o")
+        .replace(/ufat/gi, "u");
 
     if (texto.length !=0){
         document.getElementById("texto").value = textoCifrado;
